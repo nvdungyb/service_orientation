@@ -6,13 +6,13 @@ This document outlines the **analysis** and **design** process for your microser
 
 ## 1. 🎯 Problem Statement
 
-_Describe the problem your system is solving._
+_Diễn đàn trực tuyến nhằm chia sẻ, trao đổi, và kết nối với mọi người._
 
-- Who are the users?
-- What are the main goals?
-- What kind of data is processed?
+- Người dùng hệ thống: end users, administrators, guest
+- Mục tiêu: mọi người có thể tương tác với nhau trên nền tảng này
+- Dữ liệu xử lý: thông tin người dùng, bài viết, bình luận, cảm xúc, log hệ thống (maybe) 
 
-> Example: A course management system that allows students to register for courses and teachers to manage class rosters.
+[//]: # (> Example: A course management system that allows students to register for courses and teachers to manage class rosters.)
 
 ---
 
@@ -20,11 +20,14 @@ _Describe the problem your system is solving._
 
 List the microservices in your system and their responsibilities.
 
-| Service Name  | Responsibility                                | Tech Stack   |
-|---------------|------------------------------------------------|--------------|
-| service-a     | Handles user authentication and authorization | Python Flask |
-| service-b     | Manages course registration and class data    | Python Flask |
-| gateway       | Routes requests to services                   | Nginx / Flask|
+| Service Name | Responsibility                                            | Tech Stack |
+|--------------|-----------------------------------------------------------|------------|
+| Auth service | Handles user authentication and authorization             |            |
+| User service | Quản lý người dùng                                        |            |
+| Post service | Quản lý bài viết                                          |            |
+|Comment service| Quản lý bình luận                                         |            |
+|Reaction service| Quản lý cảm xúc của người dùng trên bài viết và bình luận |            |
+| Notification service| Quản lý và gửi thông báo                                  |            | 
 
 ---
 
