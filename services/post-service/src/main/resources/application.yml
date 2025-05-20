@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    stream:
+      function:
+        definition: handleEvents
+      bindings:
+        handleEvents-in-0:
+          destination: myapp.moderationdb.approved_outbox,myapp.moderationdb.rejected_outbox
+          content-type: application/json
+
+      kafka:
+        binder:
+          brokers: localhost:9092
+
+user:
+  service:
+    url: http://localhost:8081
+
