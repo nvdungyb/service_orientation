@@ -10,6 +10,7 @@ import com.java.postservice.dto.ApiResponse;
 import com.java.postservice.dto.request.PostCreationDto;
 import com.java.postservice.dto.response.UserInfo;
 import com.java.postservice.dto.response.ValidateUserResponse;
+import com.java.postservice.enums.EPostStatus;
 import com.java.postservice.enums.EventType;
 import com.java.postservice.exception.AuthorValidationException;
 import com.java.postservice.exception.PostCreationException;
@@ -129,5 +130,10 @@ public class PostService {
                 .orElseThrow(() -> new EntityNotFoundException(String.format("Post with id {} not found", id)));
 
         return post;
+    }
+
+    @Transactional
+    public void updatePostStatus(Long postId, EPostStatus eventStatus) {
+        postRepository.updatePostEvent(postId, eventStatus);
     }
 }
