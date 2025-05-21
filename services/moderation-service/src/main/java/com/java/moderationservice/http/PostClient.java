@@ -1,7 +1,7 @@
 package com.java.moderationservice.http;
 
-import com.java.postservice.dto.ApiResponse;
-import com.java.postservice.dto.response.PostResponseDto;
+import com.java.moderationservice.dto.ApiResponse;
+import com.java.moderationservice.dto.response.PostResponseDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -2,12 +2,12 @@ package com.java.moderationservice.messaging.listeners;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.java.moderationservice.enums.EPostStatus;
+import com.java.moderationservice.enums.EventType;
+import com.java.moderationservice.messaging.event.PostCreatedEvent;
+import com.java.moderationservice.messaging.event.PostOutbox;
 import com.java.moderationservice.service.ModerationService;
 import com.java.moderationservice.service.RedisService;
-import com.java.postservice.domain.PostCreatedEvent;
-import com.java.postservice.domain.PostOutbox;
-import com.java.postservice.enums.EPostStatus;
-import com.java.postservice.enums.EventType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;

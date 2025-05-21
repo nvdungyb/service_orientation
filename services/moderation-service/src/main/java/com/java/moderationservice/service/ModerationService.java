@@ -1,14 +1,14 @@
 package com.java.moderationservice.service;
 
 import com.java.moderationservice.domain.ModerateOutbox;
+import com.java.moderationservice.dto.response.PostResponseDto;
+import com.java.moderationservice.enums.EPostStatus;
+import com.java.moderationservice.enums.EVisibility;
 import com.java.moderationservice.exception.ModeratePostException;
 import com.java.moderationservice.http.PostServiceClient;
+import com.java.moderationservice.messaging.event.PostCreatedEvent;
+import com.java.moderationservice.messaging.event.PostOutbox;
 import com.java.moderationservice.repository.ModerateOutboxRepository;
-import com.java.postservice.domain.PostCreatedEvent;
-import com.java.postservice.domain.PostOutbox;
-import com.java.postservice.dto.response.PostResponseDto;
-import com.java.postservice.enums.EPostStatus;
-import com.java.postservice.enums.EVisibility;
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -25,13 +25,13 @@ public class ModerationService {
     private final PostServiceClient postServiceClient;
     private final Executor taskExecutor;
     private final ForbiddenWordCheckerService forbiddenWordCheckerService;
-    private final ModerateOutboxRepository approvedOutboxRepository;
+    private final ModerateOutboxRepository moderateOutboxRepository;
 
     public ModerationService(PostServiceClient postServiceClient, @Qualifier("taskExecutor") Executor taskExecutor, ForbiddenWordCheckerService forbiddenWordCheckerService, ModerateOutboxRepository approvedOutboxRepository) {
         this.postServiceClient = postServiceClient;
         this.taskExecutor = taskExecutor;
         this.forbiddenWordCheckerService = forbiddenWordCheckerService;
-        this.approvedOutboxRepository = approvedOutboxRepository;
+        this.moderateOutboxRepository = approvedOutboxRepository;
     }
 
     public boolean moderatePost(PostCreatedEvent event) {
@@ -82,8 +82,9 @@ public class ModerationService {
                 .payload(event.getPayload())
                 .created_at(LocalDateTime.now())
                 .event_type(status)
+                .aggregate_id(event.getAggregate_id())
                 .build();
 
-        approvedOutboxRepository.save(outbox);
+        moderateOutboxRepository.save(outbox);
     }
 }

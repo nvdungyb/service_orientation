@@ -1,7 +1,7 @@
 package com.java.moderationservice.http;
 
-import com.java.postservice.dto.ApiResponse;
-import com.java.postservice.dto.response.PostResponseDto;
+import com.java.moderationservice.dto.ApiResponse;
+import com.java.moderationservice.dto.response.PostResponseDto;
 import feign.FeignException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
