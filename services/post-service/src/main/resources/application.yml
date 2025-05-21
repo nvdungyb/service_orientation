@@ -5,7 +5,7 @@ spring:
         definition: handleEvents
       bindings:
         handleEvents-in-0:
-          destination: myapp.moderationdb.approved_outbox,myapp.moderationdb.rejected_outbox
+          destination: myapp.moderationdb.outbox_events
           content-type: application/json
 
       kafka:
