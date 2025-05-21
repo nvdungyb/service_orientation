@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b1f3bffe-6eaf-480a-a27a-36858330cb17" name="Changes" comment="Add pom file for user service">
+      <change afterPath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/dto/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/dto/response/PostResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/architecture.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/architecture.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/moderation-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/moderation-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/http/PostClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/http/PostClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/http/PostServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/http/PostServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/messaging/listeners/ModerationEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/messaging/listeners/ModerationEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/service/ModerationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/service/ModerationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/moderation-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/moderation-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/post-service/src/main/java/com/java/postservice/dto/response/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/post-service/src/main/java/com/java/postservice/dto/response/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/post-service/src/main/java/com/java/postservice/messaging/listeners/PostEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/post-service/src/main/java/com/java/postservice/messaging/listeners/PostEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/post-service/src/main/java/com/java/postservice/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/post-service/src/main/java/com/java/postservice/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/post-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/post-service/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Record" />
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2wZrH0L1rsVAdg3XdnHZEuCGGgP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ForbiddenWordCheckerServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.kafka-docker/docker-compose-kafka.yml.connect: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ForbiddenWordCheckerServiceTest.testForbiddenWordCheckerService.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PostServiceApplicationTests.testDeberium.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RoleServiceTest.testCreateEnd_UserRole.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserEventPublisherImplTest.displayUserCreatedEvent.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserEventPublisherImplTest.testPublishEvent.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceTest.testCreateUser.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.moderation-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.moderation-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.moderation-service [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.post-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.post-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.post-service [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.user-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.user-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.user-service [package].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ModerationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PostServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/microservices/projects/mid-project-277301721/services/moderation-service/src/main/java/com/java/moderationservice&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ],
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\microservices\projects\mid-project-277301721\services\moderation-service\src\main\java\com\java\moderationservice" />
+      <recent name="D:\microservices\projects\mid-project-277301721\services\post-service\src\main\java\com\java\postservice" />
+      <recent name="D:\microservices\projects\mid-project-277301721\services\user-service\src\main\java\com\java\userservice" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\microservices\projects\mid-project-277301721" />
+      <recent name="D:\microservices\projects\mid-project-277301721\services\user-service\src\main\resources" />
+      <recent name="D:\microservices\projects\mid-project-277301721\services\user-service\src\main\java\com\java\userservice" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.java.userservice" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.java.moderationservice.enums" />
+      <recent name="com.java.moderationservice.messaging.event" />
+      <recent name="com.java.moderationservice.utils" />
+      <recent name="com.java.postservice.enums" />
+      <recent name="com.java.postservice.messaging.events" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ModerationServiceApplication">
+    <configuration name="ForbiddenWordCheckerServiceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.moderationservice.service.ForbiddenWordCheckerServiceTest" />
+      <module name="moderation-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.moderationservice.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ForbiddenWordCheckerServiceTest.testForbiddenWordCheckerService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="moderation-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.moderationservice.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.java.moderationservice.service" />
+      <option name="MAIN_CLASS_NAME" value="com.java.moderationservice.service.ForbiddenWordCheckerServiceTest" />
+      <option name="METHOD_NAME" value="testForbiddenWordCheckerService" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostServiceApplicationTests.testDeberium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="post-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.postservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.java.postservice" />
+      <option name="MAIN_CLASS_NAME" value="com.java.postservice.PostServiceApplicationTests" />
+      <option name="METHOD_NAME" value="testDeberium" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoleServiceTest.testCreateEnd_UserRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.userservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.java.userservice" />
+      <option name="MAIN_CLASS_NAME" value="com.java.userservice.RoleServiceTest" />
+      <option name="METHOD_NAME" value="testCreateEnd_UserRole" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.testCreateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.userservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.java.userservice" />
+      <option name="MAIN_CLASS_NAME" value="com.java.userservice.UserServiceTest" />
+      <option name="METHOD_NAME" value="testCreateUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.java.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModerationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="moderation-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.java.moderationservice.ModerationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="post-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.java.postservice.PostServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.java.userservice.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.ForbiddenWordCheckerServiceTest" />
+      <item itemvalue="JUnit.ForbiddenWordCheckerServiceTest.testForbiddenWordCheckerService" />
+      <item itemvalue="JUnit.PostServiceApplicationTests.testDeberium" />
+      <item itemvalue="JUnit.RoleServiceTest.testCreateEnd_UserRole" />
+      <item itemvalue="JUnit.UserServiceTest.testCreateUser" />
+      <item itemvalue="Spring Boot.PostServiceApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.ModerationServiceApplication" />
+      <item itemvalue="Spring Boot.UserServiceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ForbiddenWordCheckerServiceTest" />
+        <item itemvalue="JUnit.ForbiddenWordCheckerServiceTest.testForbiddenWordCheckerService" />
+        <item itemvalue="JUnit.UserServiceTest.testCreateUser" />
+        <item itemvalue="JUnit.RoleServiceTest.testCreateEnd_UserRole" />
+        <item itemvalue="JUnit.PostServiceApplicationTests.testDeberium" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b1f3bffe-6eaf-480a-a27a-36858330cb17" name="Changes" comment="" />
+      <created>1746259851093</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746259851093</updated>
+      <workItem from="1746259854508" duration="3958000" />
+      <workItem from="1746266023596" duration="1749000" />
+      <workItem from="1746267865576" duration="146000" />
+      <workItem from="1746410114046" duration="89000" />
+      <workItem from="1746667402006" duration="5185000" />
+      <workItem from="1746719974065" duration="1782000" />
+      <workItem from="1746839070140" duration="9388000" />
+      <workItem from="1746860208452" duration="5686000" />
+      <workItem from="1746866601032" duration="187000" />
+      <workItem from="1746866812262" duration="6402000" />
+      <workItem from="1746880281430" duration="13153000" />
+      <workItem from="1746954324927" duration="8556000" />
+      <workItem from="1747014372769" duration="803000" />
+      <workItem from="1747040874796" duration="7688000" />
+      <workItem from="1747058070569" duration="8935000" />
+      <workItem from="1747101448757" duration="9803000" />
+      <workItem from="1747452910993" duration="914000" />
+      <workItem from="1747453895650" duration="2289000" />
+      <workItem from="1747468172722" duration="9456000" />
+      <workItem from="1747479224563" duration="2385000" />
+      <workItem from="1747498891211" duration="2190000" />
+      <workItem from="1747527920855" duration="13584000" />
+      <workItem from="1747552488997" duration="11684000" />
+      <workItem from="1747580441549" duration="6138000" />
+      <workItem from="1747645148523" duration="4117000" />
+      <workItem from="1747663751862" duration="12141000" />
+      <workItem from="1747727432120" duration="10282000" />
+      <workItem from="1747755506261" duration="975000" />
+      <workItem from="1747812395484" duration="3191000" />
+      <workItem from="1747816872478" duration="20655000" />
+      <workItem from="1747839938246" duration="814000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add pom file for user service">
+      <option name="closed" value="true" />
+      <created>1747537017757</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747537017757</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add pom file" />
+    <MESSAGE value="Add pom file for user service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add pom file for user service" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/services/moderation-service/src/test/java/com/java/moderationservice/service/ForbiddenWordCheckerServiceTest.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/services/post-service/src/main/java/com/java/postservice/messaging/listeners/PostEventListener.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

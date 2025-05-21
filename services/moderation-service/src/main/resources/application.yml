@@ -8,11 +8,15 @@ spring:
           content-type: application/json
       kafka:
         binder:
-          brokers: localhost:9092
+          brokers: broker:29092
 
 
+#post:
+#  service:
+#    url: http://localhost:8082
+
+
+# for docker
 post:
   service:
-    url: http://localhost:8082
-
-
+    url: http://post-service:8082

@@ -1,0 +1,16 @@
+{
+  "name": "mysql-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.mysql.MySqlConnector",
+    "database.hostname": "host.docker.internal",
+    "database.port": "3306",
+    "database.user": "user",
+    "database.password": "Dung3032003_135709",
+    "database.server.id": "184054",
+    "database.server.name": "postdb",
+    "database.include.list": "postdb",
+    "table.include.list": "postdb.outbox_events",
+    "database.history.kafka.bootstrap.servers": "broker:29092",
+    "database.history.kafka.topic": "dbhistory.postdb"
+  }
+}
