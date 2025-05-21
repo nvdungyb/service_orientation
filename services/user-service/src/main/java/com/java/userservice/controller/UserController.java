@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 public class UserController {
@@ -36,5 +38,22 @@ public class UserController {
                 .data(userMapper.toDto(user))
                 .time(LocalDateTime.now())
                 .build());
+    }
+
+    @GetMapping("/users/all")
+    public ResponseEntity<ApiResponse<?>> getAllUsers() {
+        logger.info("Get all users");
+        List<User> userList = userService.findALl();
+
+        return ResponseEntity.ok()
+                .body(ApiResponse.builder()
+                        .status(HttpStatus.OK.value())
+                        .message("All users found")
+                        .data(userList.stream()
+                                .map(userMapper::toDto)
+                                .collect(Collectors.toUnmodifiableList())
+                        )
+                        .time(LocalDateTime.now())
+                        .build());
     }
 }

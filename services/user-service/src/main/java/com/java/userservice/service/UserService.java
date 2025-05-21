@@ -53,4 +53,8 @@ public class UserService {
         return userRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException(String.format("User with id %s not found", id)));
     }
+
+    public List<User> findALl() {
+        return (List<User>) userRepository.findAll();
+    }
 }
