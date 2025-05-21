@@ -11,11 +11,11 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "rejected_outbox")
+@Table(name = "outbox_events")
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class RejectedOutbox {
+public class ModerateOutbox {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -25,13 +25,10 @@ public class RejectedOutbox {
 
     @Column(nullable = false, name = "event_type")
     @Enumerated(value = EnumType.STRING)
-    private EPostStatus event_type = EPostStatus.REJECTED;
+    private EPostStatus event_type;
 
     @Column(nullable = false, columnDefinition = "TEXT")
     private String payload;
-
-    @Column(nullable = false)
-    private String message;
 
     @Column(nullable = false, name = "created_at")
     @JsonDeserialize(using = MicroTimestampToLocalDateTimeDeserializer.class)

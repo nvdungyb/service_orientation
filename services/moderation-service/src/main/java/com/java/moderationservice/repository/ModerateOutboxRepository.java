@@ -1,9 +1,9 @@
 package com.java.moderationservice.repository;
 
-import com.java.moderationservice.domain.ApprovedOutbox;
+import com.java.moderationservice.domain.ModerateOutbox;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ApprovedOutboxRepository extends CrudRepository<ApprovedOutbox, Long> {
+public interface ModerateOutboxRepository extends CrudRepository<ModerateOutbox, Long> {
 }

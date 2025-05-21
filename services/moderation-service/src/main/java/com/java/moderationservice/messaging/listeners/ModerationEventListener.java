@@ -6,6 +6,7 @@ import com.java.moderationservice.service.ModerationService;
 import com.java.moderationservice.service.RedisService;
 import com.java.postservice.domain.PostCreatedEvent;
 import com.java.postservice.domain.PostOutbox;
+import com.java.postservice.enums.EPostStatus;
 import com.java.postservice.enums.EventType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
@@ -70,10 +71,10 @@ public class ModerationEventListener {
 
             if (moderationService.moderatePost(postCreatedEvent)) {
                 log.info("Post moderation was successfully: {}", event);
-                moderationService.saveApprovedOutbox(event);
+                moderationService.saveModerateOutbox(event, EPostStatus.APPROVED);
             } else {
                 log.info("Post moderation failed: {}", event);
-                moderationService.saveRejectedOutbox(event);
+                moderationService.saveModerateOutbox(event, EPostStatus.REJECTED);
             }
         } catch (JsonProcessingException ex) {
             log.error("Lỗi khi parse message: {}", ex);

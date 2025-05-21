@@ -1,11 +1,9 @@
 package com.java.moderationservice.service;
 
-import com.java.moderationservice.domain.ApprovedOutbox;
-import com.java.moderationservice.domain.RejectedOutbox;
+import com.java.moderationservice.domain.ModerateOutbox;
 import com.java.moderationservice.exception.ModeratePostException;
 import com.java.moderationservice.http.PostServiceClient;
-import com.java.moderationservice.repository.ApprovedOutboxRepository;
-import com.java.moderationservice.repository.RejectedOutboxRepository;
+import com.java.moderationservice.repository.ModerateOutboxRepository;
 import com.java.postservice.domain.PostCreatedEvent;
 import com.java.postservice.domain.PostOutbox;
 import com.java.postservice.dto.response.PostResponseDto;
@@ -27,14 +25,12 @@ public class ModerationService {
     private final PostServiceClient postServiceClient;
     private final Executor taskExecutor;
     private final ForbiddenWordCheckerService forbiddenWordCheckerService;
-    private final RejectedOutboxRepository rejectedOutboxRepository;
-    private final ApprovedOutboxRepository approvedOutboxRepository;
+    private final ModerateOutboxRepository approvedOutboxRepository;
 
-    public ModerationService(PostServiceClient postServiceClient, @Qualifier("taskExecutor") Executor taskExecutor, ForbiddenWordCheckerService forbiddenWordCheckerService, RejectedOutboxRepository rejectedOutboxRepository, ApprovedOutboxRepository approvedOutboxRepository) {
+    public ModerationService(PostServiceClient postServiceClient, @Qualifier("taskExecutor") Executor taskExecutor, ForbiddenWordCheckerService forbiddenWordCheckerService, ModerateOutboxRepository approvedOutboxRepository) {
         this.postServiceClient = postServiceClient;
         this.taskExecutor = taskExecutor;
         this.forbiddenWordCheckerService = forbiddenWordCheckerService;
-        this.rejectedOutboxRepository = rejectedOutboxRepository;
         this.approvedOutboxRepository = approvedOutboxRepository;
     }
 
@@ -80,25 +76,12 @@ public class ModerationService {
     }
 
     @Transactional
-    public void saveRejectedOutbox(PostOutbox event) {
-        RejectedOutbox outbox = RejectedOutbox.builder()
+    public void saveModerateOutbox(PostOutbox event, EPostStatus status) {
+        ModerateOutbox outbox = ModerateOutbox.builder()
                 .event_id(event.getEvent_id())
                 .payload(event.getPayload())
                 .created_at(LocalDateTime.now())
-                .event_type(EPostStatus.REJECTED)
-                .message("The title or content of the post is invalid")             // if you want to fix that, you need to use design pattern
-                .build();
-
-        rejectedOutboxRepository.save(outbox);
-    }
-
-    @Transactional
-    public void saveApprovedOutbox(PostOutbox event) {
-        ApprovedOutbox outbox = ApprovedOutbox.builder()
-                .event_id(event.getEvent_id())
-                .payload(event.getPayload())
-                .created_at(LocalDateTime.now())
-                .event_type(EPostStatus.APPROVED)
+                .event_type(status)
                 .build();
 
         approvedOutboxRepository.save(outbox);
