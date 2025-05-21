@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1f3bffe-6eaf-480a-a27a-36858330cb17" name="Changes" comment="Add pom file for user service">
-      <change afterPath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/dto/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/dto/response/PostResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/architecture.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/architecture.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/moderation-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/moderation-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/http/PostClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/http/PostClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/http/PostServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/http/PostServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/messaging/listeners/ModerationEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/messaging/listeners/ModerationEventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/service/ModerationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/moderation-service/src/main/java/com/java/moderationservice/service/ModerationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/moderation-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/moderation-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/post-service/src/main/java/com/java/postservice/dto/response/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/post-service/src/main/java/com/java/postservice/dto/response/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/post-service/src/main/java/com/java/postservice/messaging/listeners/PostEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/post-service/src/main/java/com/java/postservice/messaging/listeners/PostEventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/post-service/src/main/java/com/java/postservice/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/post-service/src/main/java/com/java/postservice/service/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/post-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/post-service/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="b1f3bffe-6eaf-480a-a27a-36858330cb17" name="Changes" comment="Add pom file for user service" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
