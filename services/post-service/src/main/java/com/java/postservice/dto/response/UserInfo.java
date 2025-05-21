@@ -1,6 +1,6 @@
 package com.java.postservice.dto.response;
 
-import com.java.userservice.enums.Erole;
+import com.java.postservice.enums.Erole;
 import lombok.Data;
 import lombok.Getter;
 

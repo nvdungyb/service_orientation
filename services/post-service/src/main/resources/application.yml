@@ -8,11 +8,20 @@ spring:
           destination: myapp.moderationdb.outbox_events
           content-type: application/json
 
+# for localhost
+#      kafka:
+#        binder:
+#          brokers: localhost:9092
+
       kafka:
         binder:
-          brokers: localhost:9092
+          brokers: broker:29092
 
+#user:
+#  service:
+#    url: http://localhost:8081
+
+# for docker
 user:
   service:
-    url: http://localhost:8081
-
+    url: http://user-service:8081

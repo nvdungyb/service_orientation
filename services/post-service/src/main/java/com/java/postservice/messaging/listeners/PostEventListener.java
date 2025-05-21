@@ -39,6 +39,7 @@ public class PostEventListener {
         };
     }
 
+    // event trong payload la PostCreatedEvent
     private void handlePostEvent(ObjectMapper objectMapper, BaseOutbox outbox) {
         try {
             PostCreatedEvent event = objectMapper.readValue(outbox.getPayload(), PostCreatedEvent.class);
