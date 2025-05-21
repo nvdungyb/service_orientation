@@ -1,8 +1,8 @@
 package com.java.moderationservice.domain;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.java.postservice.enums.EPostStatus;
-import com.java.postservice.utils.MicroTimestampToLocalDateTimeDeserializer;
+import com.java.moderationservice.enums.EPostStatus;
+import com.java.moderationservice.utils.MicroTimestampToLocalDateTimeDeserializer;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -33,4 +33,7 @@ public class ModerateOutbox {
     @Column(nullable = false, name = "created_at")
     @JsonDeserialize(using = MicroTimestampToLocalDateTimeDeserializer.class)
     private LocalDateTime created_at;
+
+    @Column(nullable = false, name = "aggregate_id")
+    private String aggregate_id;
 }
