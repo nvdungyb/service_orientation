@@ -84,6 +84,7 @@
     + Post Service gọi nội bộ đến User Service để lấy thông tin người đăng bài
     + Moderation service gọi nội bộ đến Post Service để lấy thông tin bài viết
     + Notification service gọi nội bộ đến User Service để lấy thông tin người dùng
+  + ![internal_communication](asset/internal-communication.png)    
 
 
 + Giao tiếp bất đồng bộ – Kafka (Message Queue)
@@ -93,7 +94,7 @@
       + Post Service phát sự kiện “bài viết mới” lên Kafka → Moderation Service nhận và kiểm duyệt
       + Moderation Service gửi kết quả kiểm duyệt lên Kafka → Post Service và Notification Service nhận để xử lý tiếp
     + Các dịch vụ phát sự kiện sử dụng Outbox Pattern để đảm bảo dữ liệu được gửi lên Kafka một cách an toàn và nhất quán
-
+  + ![async_communication](asset/async_communication.png)
 
 2. Kết nối mạng nội bộ
 - Tên dịch vụ (service name) trong Docker Compose
@@ -115,12 +116,13 @@
 
 
 
-## Data Flow
-- Explain the flow of data between services and the gateway.
-- Include any external dependencies (e.g., databases, third-party APIs).
+[//]: # (## Data Flow)
 
-## Diagram
-- Reference a high-level architecture diagram (place in `docs/asset/`).
+[//]: # (- Explain the flow of data between services and the gateway.)
+
+[//]: # (- Include any external dependencies &#40;e.g., databases, third-party APIs&#41;.)
+
+## Kiến trúc tổng quan
+- ![high-level-architecture](asset/high-level-architecture.png)
 
 ## Scalability & Fault Tolerance
-- Briefly discuss how the system can scale or handle failures.
